@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: k2.cloud--vpn.site
+  server: a2.arshia-nova.ir
   port: 443
-  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
+  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
   udp: true
   tls: true
   skip-cert-verify: true
@@ -26,6 +26,28 @@ proxies:
   password: rSeYcig_XBy8q3k33NpK3A
   udp: true
 - name: 🇫🇮 FI 03 - xiaohe
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 04 - xiaohe
+  type: vless
+  server: 2.29.42.188
+  port: 443
+  uuid: 2713d763-325f-4dcb-8656-cca54cbea4d9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 05 - xiaohe
   type: vless
   server: 185.79.138.71
   port: 448
@@ -45,6 +67,8 @@ proxy-groups:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
   - 🇫🇮 FI 03 - xiaohe
+  - 🇫🇮 FI 04 - xiaohe
+  - 🇫🇮 FI 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +77,7 @@ proxy-groups:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
   - 🇫🇮 FI 03 - xiaohe
+  - 🇫🇮 FI 04 - xiaohe
+  - 🇫🇮 FI 05 - xiaohe
 rules:
 - MATCH,PROXIES
