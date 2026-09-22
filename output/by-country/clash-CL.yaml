@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇱 CL 01 - xiaohe
   type: vless
-  server: platform109.golnamakcert.top
+  server: platform118.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -14,9 +14,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform118
     headers:
-      Host: platform109.golnamakcert.top
+      Host: platform118.halalkhor.info
 - name: 🇨🇱 CL 02 - xiaohe
   type: vless
   server: 34.176.98.128
@@ -28,7 +28,7 @@ proxies:
   reality-opts:
     public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇨🇱 CL 03 - xiaohe
   type: vless
   server: 34.176.98.128
@@ -40,7 +40,7 @@ proxies:
   reality-opts:
     public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
