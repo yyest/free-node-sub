@@ -4,16 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - xiaohe
-  type: ss
-  server: 20.166.33.115
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: xyn9JRjicrWOWqAJ
-  udp: true
-- name: 🇮🇪 IE 02 - xiaohe
+- name: 🇨🇳 CN 01 - xiaohe
   type: vless
-  server: 23.95.225.10
+  server: 146.56.221.148
   port: 8443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -22,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -30,14 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - xiaohe
-  - 🇮🇪 IE 02 - xiaohe
+  - 🇨🇳 CN 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - xiaohe
-  - 🇮🇪 IE 02 - xiaohe
+  - 🇨🇳 CN 01 - xiaohe
 rules:
 - MATCH,PROXIES
