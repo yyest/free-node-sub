@@ -30,7 +30,20 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  type: vless
+  server: 172.67.187.219
+  port: 8880
+  uuid: 31f345f3-b8eb-4ca6-8b14-bb555ae2c1f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: tiny-feather-4c41.227.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -51,7 +64,8 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,6 +73,7 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
